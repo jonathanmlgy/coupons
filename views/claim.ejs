@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome Customer!</h1>
+    <p>We're giving away free coupons</p>
+    <p>as a token of appreciation</p>
+    <div class="coupon_wrapper">
+        <p><%=results.discount%></p>
+        <p><%=results.coupon%></p>
+        <form method="GET" action="/reset">
+            <input type="submit" value="Reset Count">
+        </form>
+        <form method="GET" action="/">
+            <input type="submit" value="Claim Again">
+        </form>
+
+    </div>
+</body>
+</html>
